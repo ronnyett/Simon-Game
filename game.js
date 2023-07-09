@@ -8,7 +8,7 @@ var started = false; //You'll need a way to keep track of whether if the game ha
 var level = 0;
 
 //Use jQuery to detect when a keyboard key has been pressed, when that happens for the first time, call nextSequence().
-$("body").click(function () {
+$(document).keypress(function () {
     if (!started) {
 
         //The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
